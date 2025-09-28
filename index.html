@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejal Janseva Kendra - Your Trusted Digital Service Partner</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Animate on Scroll (AOS) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc; /* A slightly cooler light gray */
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(22, 78, 99, 0.7), rgba(22, 78, 99, 0.7)), url('https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Styles for Marquee */
+        .marquee-container {
+            overflow: hidden;
+            position: relative;
+            -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+        }
+        .marquee {
+            display: flex;
+            animation: marquee 80s linear infinite;
+            gap: 1.5rem; /* gap between items */
+        }
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .marquee-container:hover .marquee {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Navigation Bar -->
+    <!-- Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-lg shadow-md">
+    <div class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <!-- Enhanced Logo with Icon -->
+            <a href="#" class="flex items-center space-x-2">
+                <i data-lucide="monitor-smartphone" class="w-8 h-8 text-purple-700"></i>
+                <span class="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-cyan-600">
+                    Sejal Janseva Kendra
+                </span>
+            </a>
+            
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-cyan-700 font-medium transition">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-cyan-700 font-medium transition">About</a>
+                <a href="#services" class="text-gray-600 hover:text-cyan-700 font-medium transition">Services</a>
+                <a href="#accessories" class="text-gray-600 hover:text-cyan-700 font-medium transition">Accessories</a>
+                <a href="#contact" class="bg-orange-500 text-white px-5 py-2 rounded-full font-semibold hover:bg-orange-600 transition shadow-md">Contact Us</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="lg:hidden p-2 text-gray-700">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden lg:hidden px-6 pb-4 space-y-2 border-t border-gray-100">
+        <a href="#home" class="block py-2 text-gray-600 hover:text-cyan-700 font-medium">Home</a>
+        <a href="#about" class="block py-2 text-gray-600 hover:text-cyan-700 font-medium">About</a>
+        <a href="#services" class="block py-2 text-gray-600 hover:text-cyan-700 font-medium">Services</a>
+        <a href="#accessories" class="block py-2 text-gray-600 hover:text-cyan-700 font-medium">Accessories</a>
+        <a href="#contact" class="block mt-2 text-center bg-orange-500 text-white px-5 py-2 rounded-full font-semibold">Contact Us</a>
+    </div>
+</nav>
+
+
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="home" class="hero-bg py-24 lg:py-40 text-white">
+            <div class="container mx-auto px-6 text-center" data-aos="fade-up">
+                <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4">Fast, Reliable & Secure Digital Services</h1>
+                <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8 font-light text-gray-200">
+                    Your one-stop solution for all government services, online forms, digital payments, and professional document handling.
+                </p>
+                <a href="#services" class="bg-orange-500 text-white hover:bg-orange-600 transition duration-300 text-lg font-bold py-4 px-8 rounded-full shadow-lg transform hover:scale-105">
+                    Explore Our Services
+                </a>
+            </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section id="updates" class="py-16 bg-gray-100">
+             <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-cyan-900 mb-4">Latest Updates & Opportunities</h2>
+                    <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-10">Stay informed about new government schemes, job alerts, and important deadlines.</p>
+                </div>
+                <div class="marquee-container" data-aos="fade-up">
+                    <div class="marquee">
+                        <!-- Cards are duplicated for a seamless loop -->
+                        <div class="group relative bg-white p-6 rounded-lg shadow-md w-80 flex-shrink-0">
+                            <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">NEW SCHEME</span>
+                            <h3 class="font-bold text-gray-800 mt-2">PM Surya Ghar Yojana</h3>
+                            <p class="text-sm text-gray-600 mt-1">Applications for free electricity are now open. Visit us to apply!</p>
+                            <a href="#contact" class="absolute inset-0 bg-cyan-800 bg-opacity-90 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white font-bold text-lg">Send Query</span>
+                            </a>
+                        </div>
+                        <div class="group relative bg-white p-6 rounded-lg shadow-md w-80 flex-shrink-0">
+                            <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">JOBS</span>
+                            <h3 class="font-bold text-gray-800 mt-2">Rajasthan Police Constable</h3>
+                            <p class="text-sm text-gray-600 mt-1">Recruitment is starting soon. Get your documents ready with our help.</p>
+                            <a href="#contact" class="absolute inset-0 bg-cyan-800 bg-opacity-90 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white font-bold text-lg">Send Query</span>
+                            </a>
+                        </div>
+                        <div class="group relative bg-white p-6 rounded-lg shadow-md w-80 flex-shrink-0">
+                            <span class="absolute top-4 right-4 bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded">ALERT</span>
+                            <h3 class="font-bold text-gray-800 mt-2">PAN-Aadhaar Linking</h3>
+                            <p class="text-sm text-gray-600 mt-1">The deadline is approaching. Link your documents today to avoid penalties!</p>
+                             <a href="#contact" class="absolute inset-0 bg-cyan-800 bg-opacity-90 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white font-bold text-lg">Send Query</span>
+                            </a>
+                        </div>
+                        <div class="group relative bg-white p-6 rounded-lg shadow-md w-80 flex-shrink-0">
+                            <span class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">UPDATE</span>
+                            <h3 class="font-bold text-gray-800 mt-2">E-Shram Card Benefits</h3>
+                            <p class="text-sm text-gray-600 mt-1">E-Shram card holders can now apply for new health and pension benefits.</p>
+                             <a href="#contact" class="absolute inset-0 bg-cyan-800 bg-opacity-90 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white font-bold text-lg">Send Query</span>
+                            </a>
+                        </div>
+                        <!-- Duplicate Set -->
+                         <div class="group relative bg-white p-6 rounded-lg shadow-md w-80 flex-shrink-0">
+                            <span class="absolute top-4 right-4 bg-orange-500 text-white text-xs font-bold px-2 py-1 rounded">NEW SCHEME</span>
+                            <h3 class="font-bold text-gray-800 mt-2">PM Surya Ghar Yojana</h3>
+                            <p class="text-sm text-gray-600 mt-1">Applications for free electricity are now open. Visit us to apply!</p>
+                            <a href="#contact" class="absolute inset-0 bg-cyan-800 bg-opacity-90 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white font-bold text-lg">Send Query</span>
+                            </a>
+                        </div>
+                        <div class="group relative bg-white p-6 rounded-lg shadow-md w-80 flex-shrink-0">
+                            <span class="absolute top-4 right-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">JOBS</span>
+                            <h3 class="font-bold text-gray-800 mt-2">Rajasthan Police Constable</h3>
+                            <p class="text-sm text-gray-600 mt-1">Recruitment is starting soon. Get your documents ready with our help.</p>
+                            <a href="#contact" class="absolute inset-0 bg-cyan-800 bg-opacity-90 flex items-center justify-center rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <span class="text-white font-bold text-lg">Send Query</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About Us -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div data-aos="fade-right">
+                        <img src="new003.jpg" alt="Sejal Janseva Kendra Interior" class="rounded-xl shadow-2xl w-full">
+                    </div>
+                    <div data-aos="fade-left">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-cyan-900 mb-4">Your Trusted Partner in Digital India</h2>
+                        <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+                            Sejal Janseva Kendra is committed to bridging the digital divide in our community. We provide accessible and efficient digital services to help you navigate government portals, complete online applications, and manage your digital life with ease. From Aadhaar and PAN updates to online payments, photocopying, and mobile accessories — we offer reliable, affordable, and quality services all under one roof. Located near Nirikshad Bhawan, Nunari Mod Kusmara, Mainpuri. we are always ready to serve with trust and convenience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Services Offered -->
+        <section id="services" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-cyan-900 mb-12">Our Core Services</h2>
+                </div>
+
+                <!-- Government Documents & IDs -->
+                <div data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-8 text-center border-b-2 border-blue-200 pb-4">Government Documents & IDs</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-blue-600 text-left"><i data-lucide="fingerprint" class="w-12 h-12 text-blue-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Aadhaar Card Services</h3><p class="text-gray-600">Enrollments, biometric updates, address/mobile changes, and PVC cards.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-blue-600 text-left"><i data-lucide="credit-card" class="w-12 h-12 text-blue-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">PAN Card Assistance</h3><p class="text-gray-600">New applications and correction or updates in existing cards.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-blue-600 text-left"><i data-lucide="vote" class="w-12 h-12 text-blue-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Voter ID Card</h3><p class="text-gray-600">New registrations, corrections, and linking with Aadhaar.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-blue-600 text-left"><i data-lucide="car" class="w-12 h-12 text-blue-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Driving License</h3><p class="text-gray-600">Online applications for learner's, permanent, and renewal.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-blue-600 text-left"><i data-lucide="book-user" class="w-12 h-12 text-blue-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Passport Application</h3><p class="text-gray-600">Guidance and form submission for new passports and renewals.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-blue-600 text-left"><i data-lucide="file-text" class="w-12 h-12 text-blue-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Certificates</h3><p class="text-gray-600">Assistance with Birth, Death, and Marriage certificates.</p></a>
+                    </div>
+                </div>
+
+                <!-- Travel & Ticketing -->
+                <div data-aos="fade-up" class="mt-16">
+                    <h3 class="text-2xl font-bold text-purple-800 mb-8 text-center border-b-2 border-purple-200 pb-4">Travel & Ticketing</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600 text-left"><i data-lucide="train-track" class="w-12 h-12 text-purple-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Railway Tickets</h3><p class="text-gray-600">Instant booking for all trains across India, including Tatkal.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600 text-left"><i data-lucide="bus" class="w-12 h-12 text-purple-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Bus Tickets</h3><p class="text-gray-600">Book tickets for government and private buses for any route.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600 text-left"><i data-lucide="plane" class="w-12 h-12 text-purple-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Airplane Tickets</h3><p class="text-gray-600">Find the best fares for domestic and international flights.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600 text-left"><i data-lucide="hotel" class="w-12 h-12 text-purple-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Hotel Booking</h3><p class="text-gray-600">Affordable hotel reservations for your travel needs.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600 text-left"><i data-lucide="shield-check" class="w-12 h-12 text-purple-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Travel Insurance</h3><p class="text-gray-600">Secure your trips with comprehensive travel insurance plans.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-purple-600 text-left"><i data-lucide="globe-2" class="w-12 h-12 text-purple-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Visa Assistance</h3><p class="text-gray-600">Guidance on visa applications for various countries.</p></a>
+                    </div>
+                </div>
+
+                <!-- Financial Services -->
+                <div data-aos="fade-up" class="mt-16">
+                    <h3 class="text-2xl font-bold text-green-800 mb-8 text-center border-b-2 border-green-200 pb-4">Financial Services</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-green-600 text-left"><i data-lucide="banknote" class="w-12 h-12 text-green-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Bill Payments</h3><p class="text-gray-600">Pay electricity, water, and other utility bills instantly.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-green-600 text-left"><i data-lucide="smartphone" class="w-12 h-12 text-green-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Mobile/DTH Recharges</h3><p class="text-gray-600">Top-up any mobile or DTH connection with ease.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-green-600 text-left"><i data-lucide="send" class="w-12 h-12 text-green-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Money Transfer</h3><p class="text-gray-600">Securely send money to any bank account in India.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-green-600 text-left"><i data-lucide="umbrella" class="w-12 h-12 text-green-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Insurance Premiums</h3><p class="text-gray-600">Pay your life, health, and motor insurance premiums.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-green-600 text-left"><i data-lucide="landmark" class="w-12 h-12 text-green-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Loan Applications</h3><p class="text-gray-600">Assistance with applications for personal and other loans.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-green-600 text-left"><i data-lucide="credit-card" class="w-12 h-12 text-green-600 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Micro-ATM Services</h3><p class="text-gray-600">Cash withdrawal and balance inquiry services.</p></a>
+                    </div>
+                </div>
+
+                <!-- General & Utility Services -->
+                <div data-aos="fade-up" class="mt-16">
+                    <h3 class="text-2xl font-bold text-yellow-800 mb-8 text-center border-b-2 border-yellow-200 pb-4">General & Utility Services</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-yellow-500 text-left"><i data-lucide="mouse-pointer-click" class="w-12 h-12 text-yellow-500 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Online Form Filling</h3><p class="text-gray-600">Job applications, exam forms, and university admissions.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-yellow-500 text-left"><i data-lucide="printer" class="w-12 h-12 text-yellow-500 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Photocopy & Scanning</h3><p class="text-gray-600">High-quality document copying and digital scanning.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-yellow-500 text-left"><i data-lucide="layers" class="w-12 h-12 text-yellow-500 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Lamination</h3><p class="text-gray-600">Protect your important documents with durable lamination.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-yellow-500 text-left"><i data-lucide="file-signature" class="w-12 h-12 text-yellow-500 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Resume/CV Making</h3><p class="text-gray-600">Professionally designed resumes to help you stand out.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-yellow-500 text-left"><i data-lucide="mail" class="w-12 h-12 text-yellow-500 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Email & Digital Mail</h3><p class="text-gray-600">Assistance with sending and receiving important emails.</p></a>
+                        <a href="#contact" class="service-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 border-t-4 border-yellow-500 text-left"><i data-lucide="message-square-plus" class="w-12 h-12 text-yellow-500 mb-4"></i><h3 class="text-xl font-bold text-gray-800 mb-2">Online Grievance Filing</h3><p class="text-gray-600">File complaints or grievances on government portals.</p></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Electronics Accessories Section -->
+        <section id="accessories" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center" data-aos="fade-up">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-cyan-900 mb-12">Electronics & Accessories</h2>
+                </div>
+                
+                <!-- Mobile & Audio -->
+                <div data-aos="fade-up">
+                    <h3 class="text-2xl font-bold text-blue-800 mb-8 text-center border-b-2 border-blue-200 pb-4">Mobile & Audio</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="smartphone-charging" class="w-10 h-10 mx-auto mb-3 text-blue-600"></i><h3 class="font-bold text-gray-800 flex-grow">Mobile Charger</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">15% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="usb" class="w-10 h-10 mx-auto mb-3 text-blue-600"></i><h3 class="font-bold text-gray-800 flex-grow">USB-C Cable</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">20% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="headphones" class="w-10 h-10 mx-auto mb-3 text-blue-600"></i><h3 class="font-bold text-gray-800 flex-grow">Wired Earphones</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">30% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="bluetooth" class="w-10 h-10 mx-auto mb-3 text-blue-600"></i><h3 class="font-bold text-gray-800 flex-grow">Bluetooth Earbuds</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">25% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="battery-charging" class="w-10 h-10 mx-auto mb-3 text-blue-600"></i><h3 class="font-bold text-gray-800 flex-grow">Power Bank (10k mAh)</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">15% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="speaker" class="w-10 h-10 mx-auto mb-3 text-blue-600"></i><h3 class="font-bold text-gray-800 flex-grow">Bluetooth Speaker</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">25% OFF</span></div></div>
+                    </div>
+                </div>
+
+                <!-- Computer Peripherals -->
+                 <div data-aos="fade-up" class="mt-16">
+                    <h3 class="text-2xl font-bold text-purple-800 mb-8 text-center border-b-2 border-purple-200 pb-4">Computer Peripherals</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="mouse" class="w-10 h-10 mx-auto mb-3 text-purple-600"></i><h3 class="font-bold text-gray-800 flex-grow">Wireless Mouse</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">10% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="keyboard" class="w-10 h-10 mx-auto mb-3 text-purple-600"></i><h3 class="font-bold text-gray-800 flex-grow">Keyboard Combo</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">18% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="camera" class="w-10 h-10 mx-auto mb-3 text-purple-600"></i><h3 class="font-bold text-gray-800 flex-grow">Webcam (HD)</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">15% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="wifi" class="w-10 h-10 mx-auto mb-3 text-purple-600"></i><h3 class="font-bold text-gray-800 flex-grow">Wi-Fi Dongle</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">22% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="square" class="w-10 h-10 mx-auto mb-3 text-purple-600"></i><h3 class="font-bold text-gray-800 flex-grow">Gaming Mousepad</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">12% OFF</span></div></div>
+                        <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="laptop" class="w-10 h-10 mx-auto mb-3 text-purple-600"></i><h3 class="font-bold text-gray-800 flex-grow">Laptop Stand</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">20% OFF</span></div></div>
+                    </div>
+                </div>
+
+                 <!-- Storage & Data -->
+                 <div data-aos="fade-up" class="mt-16">
+                    <h3 class="text-2xl font-bold text-green-800 mb-8 text-center border-b-2 border-green-200 pb-4">Storage & Data</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="save" class="w-10 h-10 mx-auto mb-3 text-green-600"></i><h3 class="font-bold text-gray-800 flex-grow">Pen Drive (64GB)</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">20% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="save" class="w-10 h-10 mx-auto mb-3 text-green-600"></i><h3 class="font-bold text-gray-800 flex-grow">Memory Card (128GB)</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">10% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="hard-drive" class="w-10 h-10 mx-auto mb-3 text-green-600"></i><h3 class="font-bold text-gray-800 flex-grow">External HDD (1TB)</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">15% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="arrow-left-right" class="w-10 h-10 mx-auto mb-3 text-green-600"></i><h3 class="font-bold text-gray-800 flex-grow">OTG Adapter</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">35% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="folder-input" class="w-10 h-10 mx-auto mb-3 text-green-600"></i><h3 class="font-bold text-gray-800 flex-grow">Card Reader</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">25% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="cable" class="w-10 h-10 mx-auto mb-3 text-green-600"></i><h3 class="font-bold text-gray-800 flex-grow">HDMI Cable</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">15% OFF</span></div></div>
+                    </div>
+                </div>
+
+                 <!-- General Electronics -->
+                 <div data-aos="fade-up" class="mt-16">
+                    <h3 class="text-2xl font-bold text-yellow-800 mb-8 text-center border-b-2 border-yellow-200 pb-4">General Electronics</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="smartphone" class="w-10 h-10 mx-auto mb-3 text-yellow-500"></i><h3 class="font-bold text-gray-800 flex-grow">Screen Protector</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">10% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="tablet-smartphone" class="w-10 h-10 mx-auto mb-3 text-yellow-500"></i><h3 class="font-bold text-gray-800 flex-grow">Mobile Stand</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">20% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="car-front" class="w-10 h-10 mx-auto mb-3 text-yellow-500"></i><h3 class="font-bold text-gray-800 flex-grow">Car Charger</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">15% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="circle-dot" class="w-10 h-10 mx-auto mb-3 text-yellow-500"></i><h3 class="font-bold text-gray-800 flex-grow">LED Ring Light</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">30% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="tv-2" class="w-10 h-10 mx-auto mb-3 text-yellow-500"></i><h3 class="font-bold text-gray-800 flex-grow">Universal Remote</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">10% OFF</span></div></div>
+                         <div class="group bg-gray-50 p-4 rounded-xl shadow-md text-center flex flex-col justify-between overflow-hidden relative"><div class="p-4 flex flex-col flex-grow"><i data-lucide="battery" class="w-10 h-10 mx-auto mb-3 text-yellow-500"></i><h3 class="font-bold text-gray-800 flex-grow">AA/AAA Batteries</h3><span class="inline-block bg-green-100 text-green-700 text-sm font-semibold mt-2 px-3 py-1 rounded-full">20% OFF</span></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact / Location -->
+        <section id="contact" class="py-20 bg-cyan-800 text-white">
+            <div class="container mx-auto px-6" data-aos="fade-up">
+                 <div class="text-center">
+                    <h2 class="text-3xl sm:text-4xl font-bold mb-4">Get in Touch or Visit Us Today</h2>
+                    <p class="text-lg text-cyan-200 max-w-3xl mx-auto mb-12">We are conveniently located in Kusmara to serve you better. Drop by during our working hours.</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-12 bg-white/10 p-8 rounded-2xl">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Contact & Timings</h3>
+                        <address class="not-italic space-y-4 text-cyan-100 text-lg">
+                            <p class="flex items-start"><i data-lucide="map-pin" class="w-6 h-6 mr-3 mt-1 text-orange-400"></i><span>In front of Nirikshad Bhawan, Nunari Mod Kusmara Mainpuri(205304)</span></p>
+                            <p class="flex items-center"><i data-lucide="phone" class="w-6 h-6 mr-3 text-orange-400"></i><span>+91 97603 02191</span></p>
+                            <p class="flex items-center"><i data-lucide="mail" class="w-6 h-6 mr-3 text-orange-400"></i><span>contact@sejalkendra.in</span></p>
+                            <p class="flex items-start"><i data-lucide="clock" class="w-6 h-6 mr-3 mt-1 text-orange-400"></i><span><strong>Mon - Sun:</strong> 9:00 AM - 6:00 PM</p>
+                        </address>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Send a Query</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <input type="text" placeholder="Your Name" required class="w-full p-3 bg-white/20 rounded-md border-2 border-transparent focus:ring-2 focus:ring-orange-400 focus:outline-none placeholder-cyan-200">
+                            <input type="tel" placeholder="Mobile No." required class="w-full p-3 bg-white/20 rounded-md border-2 border-transparent focus:ring-2 focus:ring-orange-400 focus:outline-none placeholder-cyan-200">
+                            <input type="text" placeholder="Service Needed (e.g., PAN Card)" required class="w-full p-3 bg-white/20 rounded-md border-2 border-transparent focus:ring-2 focus:ring-orange-400 focus:outline-none placeholder-cyan-200">
+                            <button type="submit" class="w-full bg-orange-500 text-white py-3 rounded-full font-semibold hover:bg-orange-600 transition shadow-md">Submit Request</button>
+                        </form>
+                        <div id="contactMessageBox" class="mt-4 p-3 text-sm font-medium rounded-lg hidden"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-1">
+                    <h3 class="text-xl font-bold mb-2">Sejal Janseva Kendra</h3>
+                    <p class="text-gray-400 text-sm">Your trusted neighborhood digital hub.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#about" class="hover:text-orange-400 transition">About Us</a></li>
+                        <li><a href="#services" class="hover:text-orange-400 transition">Services</a></li>
+                        <li><a href="#accessories" class="hover:text-orange-400 transition">Accessories</a></li>
+                        <li><a href="#contact" class="hover:text-orange-400 transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 mb-3">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a class="hover:text-orange-400 transition">Kuldeep Kumar</a></li>
+                        <li><a href="tel:+919760302191" class="hover:text-orange-400 transition">+91 97603 02191</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold text-gray-200 mb-3">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 pt-6 border-t border-gray-700 text-center text-gray-500">
+                <p>&copy; 2025 Sejal Janseva Kendra. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919760302191?text=Hello!%20I%20have%20a%20question%20about%20your%20services." target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white px-5 py-3 rounded-full shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50 flex items-center space-x-3">
+        <i data-lucide="message-circle" class="w-6 h-6"></i>
+        <span class="font-semibold hidden sm:inline">Chat on WhatsApp</span>
+    </a>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({ duration: 800, once: true });
+
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = mobileMenuButton.querySelector('i');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const isHidden = mobileMenu.classList.contains('hidden');
+            menuIcon.setAttribute('data-lucide', isHidden ? 'menu' : 'x');
+            lucide.createIcons();
+        });
+
+        // --- Contact Form Submission Simulation ---
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const messageBox = document.getElementById('contactMessageBox');
+            messageBox.textContent = 'Thank you! Your request has been sent. We will contact you shortly.';
+            messageBox.classList.remove('hidden');
+            messageBox.classList.add('bg-green-200', 'text-green-900');
+            this.reset();
+            setTimeout(() => messageBox.classList.add('hidden'), 5000);
+        });
+        
+    </script>
+</body>
+</html>
+
